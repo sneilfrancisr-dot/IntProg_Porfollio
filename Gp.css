@@ -1,1 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f2fe;
+  background-size: 24px 24px;
+  color: #333333;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+}
+
+.portfolio-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.my-info {
+  background: linear-gradient(to left, white, lightblue);
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 5px solid #2563eb;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+main.team-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.member-info {
+  background: linear-gradient(to left, white, lightblue);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.member-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.featured-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #2563eb;
+}
+
+.member-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #2563eb;
+}
+
+.role {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 5px 14px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.my-info h2 {
+  font-size: 1.35rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.member-info h3 {
+  font-size: 1.15rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.my-info p, .my-info .bio {
+  font-size: 1.05rem;
+  color: #1e293b;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.member-info p {
+  font-size: 0.95rem;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  main.team-info {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 25px 15px;
+  }
+}
